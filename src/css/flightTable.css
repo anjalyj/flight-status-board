@@ -1,0 +1,40 @@
+#flight-table-container {
+    margin: 2rem;
+}
+
+@media (min-width: 768px) {
+    #flight-table-container {
+        margin: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #flight-table-container {
+        margin: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+#flight-table-container tbody tr:hover {
+    cursor: pointer;
+}
+
+.status-on-time {
+    background-color: #c8e6c9 !important;
+    /* Light green */
+}
+
+.status-delayed {
+    background-color: #ffcdd2 !important;
+    /* Light red */
+}
+
+.status-boarding {
+    background-color: #bbdefb !important;
+    /* Light blue */
+}
+
+.status-departed {
+    background-color: #d7ccc8 !important;
+    /* Light brown */
+}

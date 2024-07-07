@@ -1,0 +1,24 @@
+#flight-detail-container {
+    margin: 2rem;
+}
+
+@media (min-width: 768px) {
+    #flight-detail-container {
+        margin: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #flight-detail-container {
+        margin: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+#flight-detail-head {
+    margin-bottom: 1rem;
+}
+
+.flight-detail-title {
+    font-weight: bold;
+}
