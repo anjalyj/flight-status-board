@@ -12,8 +12,7 @@ export const FlightTable = ({ flights }) => {
 
     return (
         <div id="flight-table-container">
-            <h4>Flight Status Board</h4>
-            <Table striped bordered hover>
+            <Table striped bordered hover responsive>
                 <thead>
                     <tr>
                         <th>Flight Number</th>

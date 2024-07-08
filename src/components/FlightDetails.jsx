@@ -32,7 +32,7 @@ const FlightDetail = () => {
         <Fragment>
             <nav class="navbar navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/"> {"<- Back Home"}</a>
+                    <a class="navbar-brand" href="/"> {"< Flight Status Board"}</a>
                 </div>
             </nav>
             {flight && <Detail flightInfo={flight} />}

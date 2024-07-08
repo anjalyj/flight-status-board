@@ -3,6 +3,7 @@ import FlightService from '../services/FlightService';
 import { FlightTable } from './FlightTable';
 import { Loader } from './Loader';
 import { Error } from './Error';
+import { Navbar } from 'react-bootstrap';
 
 const FlightList = () => {
     const [flights, setFlights] = useState([]);
@@ -28,11 +29,11 @@ const FlightList = () => {
 
     return (
         <Fragment>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/"> {"Home"}</a>
+            <Navbar expand="lg" variant="dark" bg="dark">
+                <div className="container-fluid">
+                    <Navbar.Brand href="/">Flight Status Board</Navbar.Brand>
                 </div>
-            </nav>
+            </Navbar>
             {flights.length > 0 && <FlightTable flights={flights}/>}
             {isloading && <Loader />}
             {isError && <Error />}
